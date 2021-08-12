@@ -49,9 +49,9 @@ jobs:
       # - run: ./gradlew build
       #   working-directory: server
 
-      - run: 
-        make: bootstrap
-        make: release
+      - run: |
+        make: bootstrap --force
+        make: release --force
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
