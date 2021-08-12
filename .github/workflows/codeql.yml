@@ -48,9 +48,9 @@ jobs:
       # - uses: gradle/wrapper-validation-action@v1
       # - run: ./gradlew build
       #   working-directory: server
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
 
       - run: |
         make release 
 
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v1
