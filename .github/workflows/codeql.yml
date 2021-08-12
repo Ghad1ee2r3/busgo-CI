@@ -41,9 +41,9 @@ jobs:
       #    and modify them (or add more) to build your code if your project
       #    uses a compiled language
       - uses: actions/setup-java@v1
-        # with:
-        #   java-version: "3.1.1"
-        #   architecture: x86
+        with:
+          java-version: "6.16"
+          architecture: x86
       - uses: gradle/wrapper-validation-action@v1
       - run: ./gradlew build
         working-directory: server
