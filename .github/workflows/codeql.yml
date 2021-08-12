@@ -43,7 +43,7 @@ jobs:
       #    uses a compiled language
       - uses: actions/setup-java@v1
         with:
-          java-version: "12.0.2"
+          java-version: "25.0.2"
           architecture: x86
       - uses: gradle/wrapper-validation-action@v1
       - run: ./gradlew build
