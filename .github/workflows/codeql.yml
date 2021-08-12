@@ -50,8 +50,8 @@ jobs:
       #   working-directory: server
 
       - run: |
-        make: bootstrap --force
-        make: release --force
+        make bootstrap 
+        make release 
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
