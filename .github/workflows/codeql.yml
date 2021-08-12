@@ -49,7 +49,7 @@ jobs:
       # - run: ./gradlew build
       #   working-directory: server
 
-      - run: |
+      - run: 
         make: bootstrap
         make: release
 
